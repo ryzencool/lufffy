@@ -608,7 +608,7 @@ fun writePerMapperXML(ln: String, name: String, md: ResultSetMetaData, count: In
             insertf +
             "\t\t)\n" +
             "\t\tVALUES( \n" +
-            "\t\t\t\${${pk}, jdbcType=${justifyJdbcType(jdbcTypeSelect)}}\n" +
+            "\t\t\t#{${pk}, jdbcType=${justifyJdbcType(jdbcTypeSelect)}}\n" +
             insertv +
             "\t\t)\n" +
             "\t</insert>\n"
